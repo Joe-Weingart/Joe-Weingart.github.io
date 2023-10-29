@@ -1,3 +1,36 @@
+html, body {
+    margin:0px;
+  }
+  
 .content {
     display: grid;
+    height: 100vh;
+    width: 100vw;
+    background-color: #e2e8f1;
+    grid-template-columns: min(20vw,1fr) 4fr min(15vw, 1fr);
+    grid-template-rows: 150px 5fr;
+    grid-template-areas: 
+    "d h h"
+    "d p c";
+}
+
+.dash {
+    grid-area: d;
+    background-color: #1992d4;
+}
+
+.head{
+    grid-area: h;
+    background-color: #FFFFFF;
+    box-shadow: 0px 5px 2px rgb(199, 198, 198);
+}
+
+.comments {
+    grid-area: c;
+    background-color: aqua;
+}
+
+.projects {
+    grid-area: p;
+    background-color: black;
 }
