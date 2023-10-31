@@ -14,17 +14,10 @@ html, body {
     "d p c";
 }
 
-.dash {
-    grid-area: d;
-    background-color: #1992d4;
-    display: grid;
-    color: #FFFFFF;
-}
 
-.comments {
-    grid-area: c;
-    background-color: aqua;
-}
+
+
+/*----------HEADER---------*/
 
 .head{
     display: grid;
@@ -34,22 +27,19 @@ html, body {
     box-shadow: 0px 5px 2px rgb(199, 198, 198);
 }
 
-.projects {
-    display: grid;
-    grid-area: p;
-    grid-template-columns: repeat(auto-fill, minmax(150px,1fr));
-    margin: 20px;
+
+
+/*--------DASHBOARD------*/
+
+.dash {
+    grid-area: d;
+    background-color: #1992d4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #FFFFFF;
 }
 
-.cell {
-    border: 5px;
-    margin: 5px;
-    padding: 5px;
-    background-color: rgb(251, 0, 255);
-    height: auto;
-    width: auto;
-    border-radius: 25px;
-}
 
 #bike {
     width: 30%;
@@ -61,4 +51,40 @@ html, body {
     justify-content: space-around;
     align-items: flex-start;
     margin: 5px;
+}
+
+.icon {
+    filter: invert(88%) sepia(89%) saturate(1%) hue-rotate(265deg) brightness(111%) contrast(97%);
+    width: 2em;
+    height: auto;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: ;
+}
+
+.button div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.projects {
+    display: grid;
+    grid-area: p;
+    grid-template-columns: repeat(auto-fill, minmax(150px,1fr));
+    margin: 20px;
+}
+
+.cell {
+
+    margin: 5px;
+
+    background-color: rgb(251, 0, 255);
+    height: 200px;
+    width: 150px;
+    border-radius: 25px;
 }
